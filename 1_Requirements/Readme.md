@@ -6,12 +6,13 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 
 ![MiniProject Intro Photo](kkgms_MPLTTS.png)
 ## Research
-Content for the Quiz
-File handling
+* Content for the Quiz.
+* File handling.
 
 
 ## Cost and Features
 The quiz contains a file handling algorithm, where the questions are stored in a *.csv* file.
+
 A score of the contestant is generated and a minimum criteria is to be passed to clear the quiz.
 
 ## Defining Our System
@@ -19,42 +20,50 @@ The Quiz comprises of 3 Genres
 1. General Knowledge
 2. L&T Company History
 3. Fundamentals in C language
+
 Each Genre contains **5 Questions**.
+
 A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 out of 5 Questions per round**
 
 ## SWOT ANALYSIS
 ![SWOT analysis photo](swot_analysis.png)
 
 ### Strengths
-
+* The program is scalable in terms of number of genres to be added.
+* and the scoring system adopted is fairly simple enabling easy calculation of winner.
 ### Weaknesses
-
+* Program is not GUI based so every correct answer options needs to be typed.
 ### Oppurtunities
-
+* Converting program into GUI based game.
+* Option of monitoring and keeping the highest score.
 ### Threats
-
+None as of now!
 
 # 4W&#39;s and 1&#39;H
 
 ## Who:
+**Who are the stakeholders ?**
+Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
 
-**TBD**
+The quiz is based on general concepts and not specific to any particular domain. 
 
 ## What:
+**What does the project do ?**
+The project aims at a fun quiz program which is input/output based depicting the score of the participant.
 
-**TBD**
+The participant has to qualifiy a minimum score.
 
 ## When:
 
-**TBD**
+**When will it get completed ?**
 
 ## Where:
 
-**TBD**
+**Where is the project to be done ?**
 
 ## How:
 
-**TBD**
+**How  to achieve the Targe ?**
 
 # Detail requirements
 ## High Level Requirements:
