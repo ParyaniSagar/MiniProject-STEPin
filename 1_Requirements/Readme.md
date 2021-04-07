@@ -13,11 +13,11 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 ## Cost and Features
 The quiz contains a file handling algorithm, where the questions are stored in a *.csv* file.
 
-the Format for the .csv file is
-        "Genre Name"
-        Question No. 1
-        Option A, Option B, Option C, Option D
-        Correct Option for abovequestion
+#### Format for the .csv file is
+- Genre Name
+- Question No. 1
+- Option A, Option B, Option C, Option D
+- Correct Option for abovequestion
 
 A score of the contestant is generated and a minimum criteria is to be passed to clear the quiz.
 
