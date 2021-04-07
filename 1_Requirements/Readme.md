@@ -4,8 +4,12 @@
 A fun C Programming based Quiz consisiting of questions from different genres, and a minimum score to grab an oppurtunity to be a part of the :fire: **Genesis                   Program** :fire:
 
 ## Research
-![Description](Link to Pic)
--- Content 
+![MiniProject Intro Photo](kkgms_MPLTTS.png)
+
+The Quiz comprises of 3 Genres
+1. General Knowledge
+2. L&T Company History
+3. FUndamentals in C language
 ## Cost and Features
 ![Description](Link to Pic)
 -- Content 
