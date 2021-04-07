@@ -3,20 +3,24 @@
 ### KAUN KAREGA GENESIS ME STEPin! 
 A fun C Programming based Quiz consisiting of questions from different genres, and a minimum score to grab an oppurtunity to be a part of the :fire: **Genesis                   Program** :fire:
 
-## Research
-![MiniProject Intro Photo](kkgms_MPLTTS.png)
 
+![MiniProject Intro Photo](kkgms_MPLTTS.png)
+## Research
 The Quiz comprises of 3 Genres
-1. General Knowledge
-2. L&T Company History
-3. FUndamentals in C language
+    1. General Knowledge
+    2. L&T Company History
+    3. Fundamentals in C language
+Each Genre contains **5 Questions**.
+
+A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 out of 5 Questions per round**
+
 ## Cost and Features
 ![Description](Link to Pic)
 -- Content 
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT analysis photo](swot_analysis.png)
 
 # 4W&#39;s and 1&#39;H
 
