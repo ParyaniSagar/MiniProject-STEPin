@@ -44,8 +44,8 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 ## Who:
 **Who are the stakeholders ?**
 
-    * Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
-    * The quiz is based on general concepts and not specific to any particular domain. 
+    Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
+    The quiz is based on general concepts and not specific to any particular domain. 
 
 ## What:
 **What does the project do ?**
@@ -56,20 +56,20 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 ## When:
 **When will it get completed ?**
 
-    * The Project will be completed by ______.
+    The Project will be completed by ______.
 
 ## Where:
 **Where is the project done ?**
 
-    * The Project is implemented on C program platform based on Input/Output.
+    The Project is implemented on C program platform based on Input/Output.
 
 ## How:
 **How to achieve the Target ?**
 
 To achieve the target
-    * A good knowledge in file handling in C is a must/
-    * Basic input output based functions
-    * Proficiency in Structures and pointers.
+    A good knowledge in file handling in C is a must/
+    Basic input output based functions
+    Proficiency in Structures and pointers.
 
 # Detail requirements
 ## High Level Requirements:
