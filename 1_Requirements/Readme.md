@@ -80,12 +80,12 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 
 # Detail requirements
 ## High Level Requirements:
-| ID | Description | Remarks | Implemented/Future |
-|----|-------------|---------|--------------------|
-| 1  |             |         |                    |
-|    |             |         |                    |
-|    |             |         |                    |
-|    |             |         |                    |
+| ID | Description   | Remarks      | Implemented/Future |
+|----|---------------|--------------|--------------------|
+| 1  | Questionnaire | in .csv file | Future             |
+| 2  | Score Tracker | function     | Future             |
+|    |               |              |                    |
+|    |               |              |                    |
 
 
 ##  Low level Requirements:
