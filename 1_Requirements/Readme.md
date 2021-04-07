@@ -37,33 +37,39 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 * Converting program into GUI based game.
 * Option of monitoring and keeping the highest score.
 ### Threats
-None as of now!
+* None as of now!
 
 # 4W&#39;s and 1&#39;H
 
 ## Who:
 **Who are the stakeholders ?**
-Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
 
-The quiz is based on general concepts and not specific to any particular domain. 
+    * Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
+    * The quiz is based on general concepts and not specific to any particular domain. 
 
 ## What:
 **What does the project do ?**
-The project aims at a fun quiz program which is input/output based depicting the score of the participant.
 
-The participant has to qualifiy a minimum score.
+    * The project aims at a fun quiz program which is input/output based depicting the score of the participant.
+    * The participant has to qualifiy a minimum score.
 
 ## When:
-
 **When will it get completed ?**
 
-## Where:
+    * The Project will be completed by ______.
 
-**Where is the project to be done ?**
+## Where:
+**Where is the project done ?**
+
+    * The Project is implemented on C program platform based on Input/Output.
 
 ## How:
+**How to achieve the Target ?**
 
-**How  to achieve the Targe ?**
+To achieve the target
+    * A good knowledge in file handling in C is a must/
+    * Basic input output based functions
+    * Proficiency in Structures and pointers.
 
 # Detail requirements
 ## High Level Requirements:
