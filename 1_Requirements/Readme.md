@@ -17,7 +17,8 @@ The quiz contains a file handling algorithm, where the questions are stored in a
 - Genre Name
 - Question No. 1
 - Option A, Option B, Option C, Option D
-- Correct Option for abovequestion
+- Correct Option for above question
+and so on.
 
 A score of the contestant is generated and a minimum criteria is to be passed to clear the quiz.
 
