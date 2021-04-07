@@ -6,21 +6,33 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 
 ![MiniProject Intro Photo](kkgms_MPLTTS.png)
 ## Research
+Content for the Quiz
+File handling
+
+
+## Cost and Features
+The quiz contains a file handling algorithm, where the questions are stored in a *.csv* file.
+A score of the contestant is generated and a minimum criteria is to be passed to clear the quiz.
+
+## Defining Our System
 The Quiz comprises of 3 Genres
 1. General Knowledge
 2. L&T Company History
 3. Fundamentals in C language
 Each Genre contains **5 Questions**.
-
 A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 out of 5 Questions per round**
 
-## Cost and Features
-![Description](Link to Pic)
--- Content 
-## Defining Our System
-    -- TBD
 ## SWOT ANALYSIS
 ![SWOT analysis photo](swot_analysis.png)
+
+### Strengths
+
+### Weaknesses
+
+### Oppurtunities
+
+### Threats
+
 
 # 4W&#39;s and 1&#39;H
 
