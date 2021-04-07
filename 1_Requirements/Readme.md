@@ -13,6 +13,12 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 ## Cost and Features
 The quiz contains a file handling algorithm, where the questions are stored in a *.csv* file.
 
+the Format for the .csv file is
+        "Genre Name"
+        Question No. 1
+        Option A, Option B, Option C, Option D
+        Correct Option for abovequestion
+
 A score of the contestant is generated and a minimum criteria is to be passed to clear the quiz.
 
 ## Defining Our System
@@ -73,8 +79,12 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+| ID | Description | Remarks | Implemented/Future |
+|----|-------------|---------|--------------------|
+| 1  |             |         |                    |
+|    |             |         |                    |
+|    |             |         |                    |
+|    |             |         |                    |
 
 
 ##  Low level Requirements:
