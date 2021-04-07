@@ -66,10 +66,10 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 ## How:
 **How to achieve the Target ?**
 
-To achieve the target
-    1. A good knowledge in file handling in C is a must/
-    2. Basic input output based functions
-    3. Proficiency in Structures and pointers.
+    To achieve the target
+        1. A good knowledge in file handling in C is a must/
+        2. Basic input output based functions
+        3. Proficiency in Structures and pointers.
 
 # Detail requirements
 ## High Level Requirements:
