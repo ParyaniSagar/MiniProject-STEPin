@@ -7,9 +7,9 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 ![MiniProject Intro Photo](kkgms_MPLTTS.png)
 ## Research
 The Quiz comprises of 3 Genres
-    1. General Knowledge
-    2. L&T Company History
-    3. Fundamentals in C language
+1. General Knowledge
+2. L&T Company History
+3. Fundamentals in C language
 Each Genre contains **5 Questions**.
 
 A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 out of 5 Questions per round**
