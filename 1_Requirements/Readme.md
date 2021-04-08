@@ -14,7 +14,7 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 The quiz contains a file handling algorithm, where the questions are stored in a *.csv* file.
 
 #### Format for the .csv file is
-- Genre Name
+- Genre Name to be the filename
 - Question No. 1
 - Option A, Option B, Option C, Option D
 - Correct Option for above question

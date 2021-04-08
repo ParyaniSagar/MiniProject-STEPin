@@ -1,0 +1,15 @@
+Question 1. A function which calls itself is called a ___ function.
+A. Self Function,B. Auto Function,C. Recursive Function,D. Static Function
+C
+Question 2. What is the size of a C structure?
+A. C structure is always 128 bytes,B. Size of C structure is the total bytes of all elements of structure.,C.  Size of C structure is the size of largest element.,D. None of the above
+B
+Question 3. Processor Directive in C language starts with?
+A. $,B. @,C. &,D. #
+D
+Question 4. What is the result of 0110 & 1100.?
+A. 1000,B. 0100,C. 0001,D. 1010
+B
+Question 5. What is the Priority of C Logical Operators.? NOT (!), AND (&&) and OR (||)
+A. NOT (!) > AND (&&)  > OR (||),B. OT (!) > AND (&&) = OR (||),C. AND (&&) > OR (||) > NOT (!),D. AND (&&) = OR (||) > NOT (!)
+A
