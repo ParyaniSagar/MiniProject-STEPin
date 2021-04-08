@@ -47,12 +47,11 @@ void test_readfile_no_file(void)
     free(question_array);
 }
 
-
  /**
  * @brief to test whether the quiz scoring works perfectly or not.
  * also whether all parameters are set.
  */
-/* void test_playthegame(void)
+ void test_playthegame(void)
 {
 
 }
@@ -61,7 +60,8 @@ void test_create_arrayof_questions(void)
 {
 
 }
- */
+
+
 int main(void)
 {
     /* Initiate the Unity Test Framework */

@@ -16,6 +16,6 @@ void help()
         printf("\n >> No negative marking for wrong answers!");
         printf("\n\n\t+--+--+--+-- ALL THE BEST --+--+--+--+");
         printf("\n\n\n Press Y  to start the game!\n");
-        printf("\n Press any other key to return to the main menu!\n");
+        printf("\n Press any other key to return to exit!\n");
         
 }

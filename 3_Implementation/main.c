@@ -40,6 +40,7 @@ mainhome:    introduction();
             }
             else
             {
+                system("cls");
                 return 0;
             }
             

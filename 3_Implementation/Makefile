@@ -1,7 +1,7 @@
 PROJ_NAME = KKGMS
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-BUILD_DIR = build
+COVERAGE_DIR = Coverage
 
 SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c
 
@@ -36,9 +36,12 @@ test: $(SRC) $(TEST_SRC)
 	$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:$(SRC)
-	gcc -fprofile-arcs -ftest-coverage gcc main.c $(SRC)  -o $(PROJ_NAME)
-	./$(PROJ_NAME).$(EXEC)
-	gcov -a $(SRC)
+	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(PROJ_NAME)
+	$(PROJ_NAME).$(EXEC)
+	gcov -a main.c $(SRC)
 
 clean:
-	$(RM) $(call FixPath,/*.exe)
+	$(RM) *.exe
+	$(RM) *.gcn
+	$(RM) *.gcov
+	$(RM) *.gcda
