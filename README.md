@@ -22,10 +22,13 @@ Folder             | Description
 ## Challenges Faced and How Was It Overcome
 
 1. Parsing the csv file into an array of structures using pass by reference.
+ 
         By exhausting csv file handling community forums and pages and tinkering, understanding the pattern of the file and how file handling tools work.
 2. Successfully retrieving the data of the structure to execute the porgram.
+ 
         With the help of some resources on pointer to structure array and dynamic memory allocation, the task was successfully carried out. 
 3. Accessing files in different directories
+ 
         With the help of relative path and command line executions to get clear understanding of the directory detection.
 
 ## Learning Resources
