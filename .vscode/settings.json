@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "program.h": "c"
+        "program.h": "c",
+        "unity_internals.h": "c"
     }
 }

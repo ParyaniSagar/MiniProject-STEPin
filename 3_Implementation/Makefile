@@ -1,13 +1,44 @@
-PROJ_NAME = KKGMS.exe
+PROJ_NAME = KKGMS
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
+
+BUILD_DIR = build
 
 SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c
 
+TEST_SRC = test/test.c unity/unity.c 
 
-all : 
-	gcc main.c -I -c $(SRC) -o $(PROJ_NAME)
+INC = -Iinc -Iunity
+
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
+
+# Makefile will not run target command if the name with file already exists. To override, use .PHONY
+.PHONY : all test coverage run clean doc
+
+all:  
+	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC))
 
 run : all
 	$(PROJ_NAME)
 
+test: $(SRC) $(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:$(SRC)
+	gcc -fprofile-arcs -ftest-coverage gcc main.c $(SRC)  -o $(PROJ_NAME)
+	./$(PROJ_NAME).$(EXEC)
+	gcov -a $(SRC)
+
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR)/*.exe)
+	$(RM) $(call FixPath,/*.exe)

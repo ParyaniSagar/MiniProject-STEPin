@@ -6,19 +6,19 @@
 
 error_t file_read(qna_t *question_array,char *filename)
 {
-     
+    if(question_array == NULL)
+    {
+        return NULL_PTR;
+    } 
     FILE* fp = fopen(filename, "r");
     if (!fp)
     {
         return NO_FILE;
     } 
-    if(question_array == NULL)
-    {
-        return NULL_PTR;
-    } 
+     
     else 
     {
-        printf("entered in file\n");
+        //printf("entered in file\n");
         char buffer[200];
         int index=0;
         char *token;
@@ -48,6 +48,6 @@ error_t file_read(qna_t *question_array,char *filename)
         }    
     }
     fclose(fp);
-    printf("Closed file\n");
+    //printf("Closed file\n");
     return SUCCESS;
 }
