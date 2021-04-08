@@ -19,7 +19,7 @@ int main()
     question_array = create_array_of_questions(no_of_questions);
 
     int rounds;
-    char round_1_questionanaire[100],round_2_questionnaire[100];
+    char round_1_questionanaire[200],round_2_questionnaire[200];
     char name_of_participant[50];
     char choice,genre_1,genre_2;
     printf("starting program\n");
@@ -54,10 +54,13 @@ mainhome:    introduction();
     printf("1. Fundamentals of C      |     (C)     \n");
     printf("2. LTTS history           |     (L)     \n");
     printf("3. General Knowledge      |     (G)     \n");
-    printf("First Genre :\n");
+    printf("First Genre :");
     genre_1 = toupper(getch());
+    printf("%c\n",genre_1);
     printf("Second Genre :\n");
     genre_2 = toupper(getch());
+    printf("%c\n",genre_2);
+
     if (genre_1 == genre_2)
     {
         printf("HAHA, we know you're too smart\n");
@@ -70,13 +73,13 @@ mainhome:    introduction();
         switch (genre_1)
         {
             case'C':
-                strcpy(round_1_questionanaire,"3_Implementation\build\\Fundamentals_C.csv");
+                strcpy(round_1_questionanaire,"questionnaire/Fundamentals_C.csv");
                 break;
             case 'L':
-                strcpy(round_1_questionanaire,"3_Implementation\build\\LTTS_History.csv");
+                strcpy(round_1_questionanaire,"questionnaire/LTTS_History.csv");
                 break;
             case 'G':
-                strcpy(round_1_questionanaire,"3_Implementation\\build\\General_Knowledge.csv") ;
+                strcpy(round_1_questionanaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
                 printf("please enter the value correctly\n");
@@ -86,13 +89,13 @@ mainhome:    introduction();
         switch (genre_2)
         {
             case'C':
-                strcpy(round_2_questionnaire,"3_Implementation\build\\Fundamentals_C.csv");
+                strcpy(round_2_questionnaire,"questionnaire/Fundamentals_C.csv");
                 break;
             case 'L':
-                strcpy(round_2_questionnaire,"3_Implementation\build\\LTTS_History.csv");
+                strcpy(round_2_questionnaire,"questionnaire/LTTS_History.csv");
                 break;
             case 'G':
-                strcpy(round_2_questionnaire,"3_Implementation\\build\\General_Knowledge.csv") ;
+                strcpy(round_2_questionnaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
                 printf("please enter the value correctly\n");
