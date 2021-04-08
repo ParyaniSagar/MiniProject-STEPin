@@ -4,7 +4,7 @@
 A fun C Programming based Quiz consisiting of questions from different genres, and a minimum score to grab an oppurtunity to be a part of the :fire: **Genesis                   Program** :fire:
 
 
-![MiniProject Intro Photo](kkgms_MPLTTS.png)
+![MiniProject Intro Photo](kkgms.png)
 ## Research
 * Content for the Quiz.
 * File handling.
