@@ -47,6 +47,8 @@ mainhome:    introduction();
         case 'Q':
             system("cls");
             return 0;
+        default:
+            goto mainhome;
     }
     printf("Please enter your Name: ");
     scanf("%s",name_of_participant);
@@ -58,7 +60,7 @@ mainhome:    introduction();
     printf("First Genre :");
     genre_1 = toupper(getch());
     printf("%c\n",genre_1);
-    printf("Second Genre :\n");
+    printf("Second Genre :");
     genre_2 = toupper(getch());
     printf("%c\n",genre_2);
 
