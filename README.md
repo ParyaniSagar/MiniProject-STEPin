@@ -6,9 +6,6 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 
 
 ![MiniProject Intro Photo](./1_Requirements/kkgms.png)
-
-
-[![C/C++ CI](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml)
  
  
 ## Folder Structure
