@@ -5,13 +5,16 @@
 #include<string.h>
 
 #include"../inc/program.h"
-
-error_t play_the_game(qna_t *question_array, char *name_of_participant)
+error_t play_the_game(qna_t *question_array, char *name_of_participant, const int no_of_questions)
 {
     char choice;
     int life = 2; 
     char ans[2];
-    for (int index = 0;index < 5; index++)
+    if(question_array == NULL)
+    {
+        return NULL_PTR;
+    } 
+    for (int index = 0;index < no_of_questions; index++)
     { 
         strcpy(ans,(question_array+index)->answer);
         system("cls");

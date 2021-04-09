@@ -13,6 +13,7 @@
 #ifndef __PROGRAM_H__
 #define __PROGRAM_H__
 
+
 /**
  * @brief Structure for addressing every question read from file.
  * 
@@ -64,7 +65,7 @@ qna_t *create_array_of_questions(const int no_of_questions);
  * @param score 
  * @return error_t 
  */
-error_t play_the_game(qna_t *question_array, char *name_of_participant);
+error_t play_the_game(qna_t *question_array, char *name_of_participant, const int no_of_questions);
 
 /**
  * @brief introduction of the quiz.
@@ -76,5 +77,7 @@ void introduction(void);
  * 
  */
 void help(void);
+
+
 
 #endif

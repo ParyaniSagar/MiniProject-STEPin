@@ -7,7 +7,7 @@
 
 #include "./inc/program.h"
 
-const int no_of_questions = 5;  // Number of questions per topic.
+const int no_of_questions = 5; // Number of questions per topic.
 
 qna_t *question_array = NULL;  // pointer to array of questions in each questionnaire.
 
@@ -18,7 +18,6 @@ int main()
     error_t status; //status of reading the file of questionnaire
     question_array = create_array_of_questions(no_of_questions);
 
-    int rounds;
     char round_1_questionanaire[200],round_2_questionnaire[200];
     char name_of_participant[50];
     char choice,genre_1,genre_2;
@@ -121,7 +120,7 @@ mainhome:    introduction();
     }
     else
     {
-        status = play_the_game(question_array,name_of_participant);
+        status = play_the_game(question_array,name_of_participant,no_of_questions);
         if(status == PLAYER_OUT)
         {
             return 0;
@@ -149,7 +148,7 @@ mainhome:    introduction();
     }
     else
     {
-        status = play_the_game(question_array,name_of_participant);
+        status = play_the_game(question_array,name_of_participant,no_of_questions);
         if(status == PLAYER_OUT)
         {
             printf("\n\n Sorry to see you go when you were so close, kya kijiyega ab aap? xD");
