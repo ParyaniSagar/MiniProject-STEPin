@@ -33,7 +33,7 @@ Each Genre contains **5 Questions**.
 A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 out of 5 Questions per round**
 
 ## SWOT ANALYSIS
-![SWOT analysis photo](swot_analysis.png)
+![SWOT analysis photo](swotanalysis.png)
 
 ### Strengths
 * The program is scalable in terms of number of genres to be added.
