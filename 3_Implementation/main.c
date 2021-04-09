@@ -3,7 +3,19 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
+#include <time.h>
 
+void delay(int number_of_miliseconds)
+{
+    // Converting time into milli_seconds
+    int milli_seconds = number_of_miliseconds;
+  
+    // Storing start time
+    clock_t start_time = clock();
+  
+    // looping till required time is not achieved
+    while (clock() < start_time + milli_seconds);
+}
 
 #include "./inc/program.h"
 
@@ -40,17 +52,19 @@ mainhome:    introduction();
             else
             {
                 system("cls");
+                delay(2);
                 return 0;
             }
             
         case 'Q':
             system("cls");
+            delay(2);
             return 0;
         default:
             goto mainhome;
     }
     printf("Please enter your Name: ");
-    scanf("%s",name_of_participant);
+    gets(name_of_participant);
     select_again:    system("cls");
     printf("please Enter your two choices\n");
     printf("1. Fundamentals of C      |     (C)     \n");
@@ -111,11 +125,13 @@ mainhome:    introduction();
     if(status == NO_FILE)
     {
         printf("Cant open file\n");
+        delay(2);
         return 0;
     }
     else if(status == NULL_PTR)
     {
         printf("Memory allocation error\n");
+        delay(2);
         return 0;
     }
     else
@@ -123,6 +139,7 @@ mainhome:    introduction();
         status = play_the_game(question_array,name_of_participant,no_of_questions);
         if(status == PLAYER_OUT)
         {
+            delay(2);
             return 0;
         }
     }
@@ -132,8 +149,8 @@ mainhome:    introduction();
     printf("-----------------------------------------------------\n");
     printf("Congratulations, you have made it to the second round\n");
     printf("-----------------------------------------------------\n\n");
-    printf("Press Enter to continue");
-    toupper(getch());
+    printf("Press Enter to continue : %c",getch());
+
     //Round 2 starts from here
     status = file_read(question_array,round_2_questionnaire);
     if(status == NO_FILE)
@@ -152,15 +169,18 @@ mainhome:    introduction();
         if(status == PLAYER_OUT)
         {
             printf("\n\n Sorry to see you go when you were so close, kya kijiyega ab aap? xD");
+            delay(2);
             return 0;
         }
         system("cls");
         printf("---------------------------------------------------------------------------------------------\n");
         printf("| CONGRATULATIONS, YOU HAVE PASSED ALL ROUNDS AND ARE WELCONE TO STEPin the GENESIS PORGRAM |\n");
         printf("---------------------------------------------------------------------------------------------\n\n\n");
+        printf("Press Enter to exit : %c",getch());
         
     }
     free(question_array);
+    delay(2);
     return 0;
 
 }
