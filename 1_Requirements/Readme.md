@@ -51,7 +51,7 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 ## Who:
 **Who are the stakeholders ?**
 
-    1. Any person or a member of the STEPin program willing to take up the quiz and find out if he is GENESIS ready.
+    1. Any person or a member of the STEPin program willing to take up the quiz and find out if he/she is GENESIS ready.
     2. The quiz is based on general concepts and not specific to any particular domain. 
 
 ## What:
