@@ -78,7 +78,7 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
         2. Basic input output based functions
         3. Proficiency in Structures and pointers.
 
-# Detail requirements
+# Detailed requirements
 ## High Level Requirements:
 | ID    | Description   | Remarks      | Implemented/Future |
 |-------|---------------|--------------|--------------------|
