@@ -80,14 +80,19 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 
 # Detail requirements
 ## High Level Requirements:
-| ID | Description   | Remarks      | Implemented/Future |
-|----|---------------|--------------|--------------------|
-| 1  | Questionnaire | in .csv file | Future             |
-| 2  | Score Tracker | function     | Future             |
-|    |               |              |                    |
-|    |               |              |                    |
+| ID    | Description   | Remarks      | Implemented/Future |
+|-------|---------------|--------------|--------------------|
+| HLR1  | Questionnaire | in .csv file | Implemented        |
+| HLR2  | Life Tracker  | function     | Implemented        |
+| HLR3  | Dynamic Memory management| inbuilt| Implemented        |              
+|    |                  |              |                    |
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+| ID   | Description                  | High Level ID | Implemented/Future |
+|------|------------------------------|---------------|--------------------|
+| LLR1 | Data for questions           | HLR1          | Implemented        |
+| LLR2 | csv File format and handling | HLR1          | Implemented        |
+| LLR3 | Function for counting lives  | HLR2          | Implemented        |
+| LLR4 | Array of structures          | HLR3          | Implemented        |

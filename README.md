@@ -33,8 +33,9 @@ Folder             | Description
 
 ## Learning Resources
 1. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [Git Inspector](https://github.com/ejwa/gitinspector.git)
-3. [GitGub workflow](https://docs.github.com/en/actions/learn-github-action)
-4. [File Handling in C](https://www.geeksforgeeks.org/basics-file-handling-c/)
-5. [CSV file handling](https://www.geeksforgeeks.org/relational-database-from-csv-files-in-c/)
-6. [Array of structures passed by Reference](https://github.com/stepin654321/MiniProject_Template/tree/master/Example_Programs/programming_concpets/array_of_structures)
+2. [Table Generator for Markdonw](https://www.tablesgenerator.com/markdown_tables)
+3. [Git Inspector](https://github.com/ejwa/gitinspector.git)
+4. [GitGub workflow](https://docs.github.com/en/actions/learn-github-action)
+5. [File Handling in C](https://www.geeksforgeeks.org/basics-file-handling-c/)
+6. [CSV file handling](https://www.geeksforgeeks.org/relational-database-from-csv-files-in-c/)
+7. [Array of structures passed by Reference](https://github.com/stepin654321/MiniProject_Template/tree/master/Example_Programs/programming_concpets/array_of_structures)
