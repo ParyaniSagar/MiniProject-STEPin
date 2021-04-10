@@ -80,7 +80,7 @@ mainhome:    introduction();
     if (genre_1 == genre_2)
     {
         printf("HAHA, we know you're too smart\n");
-        printf("Please select two DIFFERENT options.)\n");
+        printf("Please select two DIFFERENT options.\n");
         printf("Press enter to select genre : %c\n",getch());
         goto select_again;
     }
