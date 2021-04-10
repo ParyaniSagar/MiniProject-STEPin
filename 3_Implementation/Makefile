@@ -29,11 +29,11 @@ all:
 	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC))
 
 run : all
-	$(PROJ_NAME).$(EXEC)
+	./$(PROJ_NAME).$(EXEC)
 
 test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	./$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:$(SRC)
 	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(PROJ_NAME)
