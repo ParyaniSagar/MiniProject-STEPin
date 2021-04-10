@@ -10,6 +10,8 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
  
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b619bacd8a048d9831adb38afdbb478)](https://www.codacy.com/gh/ParyaniSagar/MiniProject-STEPin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ParyaniSagar/MiniProject-STEPin&amp;utm_campaign=Badge_Grade)
 
+[![C/C++ CI - Build Status](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml)
+
 ## Folder Structure
 Folder             | Description
 -------------------| -----------------------------------------
