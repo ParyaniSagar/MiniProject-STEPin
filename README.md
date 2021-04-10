@@ -8,6 +8,8 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 ![MiniProject Intro Photo](./1_Requirements/kkgms.png)
  
  
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b619bacd8a048d9831adb38afdbb478)](https://www.codacy.com/gh/ParyaniSagar/MiniProject-STEPin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ParyaniSagar/MiniProject-STEPin&amp;utm_campaign=Badge_Grade)
+
 ## Folder Structure
 Folder             | Description
 -------------------| -----------------------------------------
