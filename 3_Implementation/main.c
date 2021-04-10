@@ -15,7 +15,7 @@ int main()
 {
     
     error_t status; //status of reading the file of questionnaire
-    question_array = create_array_of_questions(no_of_questions);
+    
 
     char round_1_questionanaire[200],round_2_questionnaire[200];
     char name_of_participant[50];
@@ -114,6 +114,7 @@ mainhome:    introduction();
     }
     
     //round 1 starts from here
+    question_array = create_array_of_questions(no_of_questions);
     status = file_read(question_array,round_1_questionanaire);
     if(status == NO_FILE)
     {
