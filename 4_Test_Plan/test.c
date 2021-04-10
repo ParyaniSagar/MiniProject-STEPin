@@ -15,8 +15,6 @@ void tearDown()
 {
 }
 
-
-
 /**
  * @brief to test whether the file is reading correctly or not
  * and other error messages for wrong inputs.
