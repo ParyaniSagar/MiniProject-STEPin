@@ -17,7 +17,7 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
     for (int index = 0;index < no_of_questions; index++)
     { 
         strcpy(ans,(question_array+index)->answer);
-        system("cls");
+        system("cls || clear");
         printf("Name : %s\n",name_of_participant);
         printf("Lives : %d",life);
         
@@ -32,27 +32,28 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
         printf("    %s\n",(question_array+index)->option_4);
 
         printf("\n Please enter option : ");
-        choice = toupper(getch());
-        printf("%c",choice);
+        scanf("%c",&choice);
+        getchar();
+        choice = toupper(choice);
 
         if(choice == ans[0])
         {
             printf("\n Congratulations!, The correct answer is option %s\n",(question_array+index)->answer);
-            printf("Press Enter to continue\n");
-            choice = toupper(getch());
-            
+            printf("Press Enter to continue ");
+            getchar();    
         }
         else
         {
             printf("\nOh Sorry!, The correct answer is option %s\n",(question_array+index)->answer);
             life--;  
-            printf("Press Enter to continue\n");
-            choice = toupper(getch());
+            printf("Press Enter to continue ");
+            getchar();
+            
         }
 
         if(life == 0)
         {
-            system("cls");
+            system("cls || clear");
             printf("\nSorry no more lives left, please try again next time\n");
             delay(2);
             return PLAYER_OUT;

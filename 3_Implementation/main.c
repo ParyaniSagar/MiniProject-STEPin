@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
@@ -23,53 +22,58 @@ int main()
     char choice,genre_1,genre_2;
     printf("starting program\n");
 mainhome:    introduction();
-    choice=toupper(getch());
+	scanf("%c",&choice);
+    getchar();
+    choice = toupper(choice);
     switch(choice)
     {
         case 'S':
-            system("cls");
+            system("cls || clear");
             break;
         case 'H':
-            system("cls");
+            system("cls || clear");
             help();
-            choice=toupper(getch());
+            scanf("%c",&choice);
+            getchar();
+			choice = toupper(choice);
             if (choice == 'Y')
             {
+                delay(2);
                 goto mainhome;
             }
             else
             {
-                system("cls");
-                delay(2);
+                system("cls || clear");
                 return 0;
             }
             
         case 'Q':
-            system("cls");
-            delay(2);
+            system("cls || clear");
             return 0;
         default:
             goto mainhome;
     }
     printf("Please enter your Name: ");
-    gets(name_of_participant);
-    select_again:    system("cls");
+    fgets(name_of_participant,50,stdin);
+    select_again:    system("cls || clear");
     printf("please Enter your two choices\n");
     printf("1. Fundamentals of C      |     (C)     \n");
     printf("2. LTTS history           |     (L)     \n");
     printf("3. General Knowledge      |     (G)     \n");
     printf("First Genre :");
-    genre_1 = toupper(getch());
-    printf("%c\n",genre_1);
+    scanf("%c",&genre_1);
+    getchar();
+	genre_1 = toupper(genre_1);
     printf("Second Genre :");
-    genre_2 = toupper(getch());
-    printf("%c\n",genre_2);
+    scanf("%c",&genre_2);
+    getchar();
+	genre_2 = toupper(genre_2);
 
     if (genre_1 == genre_2)
     {
         printf("HAHA, we know you're too smart\n");
         printf("Please select two DIFFERENT options.\n");
-        printf("Press enter to select genre : %c\n",getch());
+        printf("Press enter to select genre : %c\n",getchar());
         goto select_again;
     }
     else
@@ -87,7 +91,7 @@ mainhome:    introduction();
                 break; 
             default: 
                 printf("please enter the value of genre 1 correctly :\n");
-                printf("%c",getch());
+                printf("%c",getchar());
                 goto select_again;
         }
         switch (genre_2)
@@ -103,7 +107,7 @@ mainhome:    introduction();
                 break; 
             default: 
                 printf("please enter the value of genre 2 correctly :\n");
-                printf("%c",getch());
+                printf("%c",getchar());
                 delay(2);
                 goto select_again;
         }
@@ -134,11 +138,12 @@ mainhome:    introduction();
     }
     free(question_array);
     question_array = create_array_of_questions(no_of_questions);
-    system("cls");
+    system("cls || clear");
     printf("-----------------------------------------------------\n");
     printf("Congratulations, you have made it to the second round\n");
     printf("-----------------------------------------------------\n\n");
-    printf("Press Enter to continue : %c",getch());
+    printf("Press Enter to continue ");
+    getchar();
 
     //Round 2 starts from here
     status = file_read(question_array,round_2_questionnaire);
@@ -161,12 +166,12 @@ mainhome:    introduction();
             delay(2);
             return 0;
         }
-        system("cls");
+        system("cls || clear");
         printf("---------------------------------------------------------------------------------------------\n");
         printf("| CONGRATULATIONS, YOU HAVE PASSED ALL ROUNDS AND ARE WELCONE TO STEPin the GENESIS PORGRAM |\n");
         printf("---------------------------------------------------------------------------------------------\n\n\n");
-        printf("Press Enter to exit : %c",getch());
-        
+        printf("You may quit the program by hitting any key");
+		getchar();    
     }
     free(question_array);
     delay(2);
