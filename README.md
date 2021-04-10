@@ -1,4 +1,7 @@
 # MiniProject-STEPin
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab2f56cd721c409b943e99e858e5e0ec)](https://app.codacy.com/gh/ParyaniSagar/MiniProject-STEPin?utm_source=github.com&utm_medium=referral&utm_content=ParyaniSagar/MiniProject-STEPin&utm_campaign=Badge_Grade_Settings)
+
 A Mini Project relevant to the STEPin training provided by L&amp;T Technology Services
 
 ### KAUN KAREGA GENESIS ME STEPin! 
