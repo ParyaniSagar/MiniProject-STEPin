@@ -80,8 +80,8 @@ mainhome:    introduction();
     if (genre_1 == genre_2)
     {
         printf("HAHA, we know you're too smart\n");
-        printf("Please select two DIFFERENT options :)\n");
-        getch();
+        printf("Please select two DIFFERENT options.)\n");
+        printf("Press enter to select genre : %c\n",getch());
         goto select_again;
     }
     else
@@ -98,8 +98,7 @@ mainhome:    introduction();
                 strcpy(round_1_questionanaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
-                printf("please enter the value correctly\n");
-                getch();
+                printf("please enter the value correctly : %c\n",getch());
                 goto select_again;
         }
         switch (genre_2)
@@ -114,8 +113,7 @@ mainhome:    introduction();
                 strcpy(round_2_questionnaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
-                printf("please enter the value correctly\n");
-                getch();
+                printf("please enter the value correctly : %c\n",getch());
                 goto select_again;
         }
     }
