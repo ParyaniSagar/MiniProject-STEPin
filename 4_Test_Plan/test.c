@@ -29,7 +29,6 @@ void test_read_file_null_ptr(void)
     question_array = NULL;
     STATUS = file_read(question_array,"questionnaire/Fundamentals_C.csv");
     TEST_ASSERT_EQUAL(NULL_PTR,STATUS);
-    free(question_array);
 
 }
 void test_read_file_success(void)
@@ -58,7 +57,6 @@ void test_read_file_no_file(void)
     question_array = NULL;
     error_t STATUS = play_the_game(question_array,"Sagar Paryani",no_of_questions );
     TEST_ASSERT_EQUAL(NULL_PTR,STATUS);
-    free(question_array);
     
 
 }
