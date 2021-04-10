@@ -33,10 +33,11 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
 
         printf("\n Please enter option : ");
         choice = toupper(getch());
+        printf("%c",choice);
 
         if(choice == ans[0])
         {
-            printf("\nCongratulations!, The correct answer is option %s\n",(question_array+index)->answer);
+            printf("\n Congratulations!, The correct answer is option %s\n",(question_array+index)->answer);
             printf("Press Enter to continue\n");
             choice = toupper(getch());
             
@@ -53,6 +54,7 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
         {
             system("cls");
             printf("\nSorry no more lives left, please try again next time\n");
+            delay(2);
             return PLAYER_OUT;
         }
         

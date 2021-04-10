@@ -5,18 +5,6 @@
 #include<string.h>
 #include <time.h>
 
-void delay(int number_of_miliseconds)
-{
-    // Converting time into milli_seconds
-    int milli_seconds = number_of_miliseconds;
-  
-    // Storing start time
-    clock_t start_time = clock();
-  
-    // looping till required time is not achieved
-    while (clock() < start_time + milli_seconds);
-}
-
 #include "./inc/program.h"
 
 const int no_of_questions = 5; // Number of questions per topic.
@@ -98,7 +86,8 @@ mainhome:    introduction();
                 strcpy(round_1_questionanaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
-                printf("please enter the value correctly : %c\n",getch());
+                printf("please enter the value of genre 1 correctly :\n");
+                printf("%c",getch());
                 goto select_again;
         }
         switch (genre_2)
@@ -113,7 +102,9 @@ mainhome:    introduction();
                 strcpy(round_2_questionnaire,"questionnaire/General_Knowledge.csv") ;
                 break; 
             default: 
-                printf("please enter the value correctly : %c\n",getch());
+                printf("please enter the value of genre 2 correctly :\n");
+                printf("%c",getch());
+                delay(2);
                 goto select_again;
         }
     }

@@ -29,6 +29,16 @@ typedef struct qna_t
 } qna_t;
 
 
+
+
+/**
+ * @brief simple delay function using inbuilt Time.h header file.
+ * 
+ * @param number_of_seconds 
+ */
+
+void delay(int number_of_seconds);
+
 /**
  * @brief enumeration of return for functions
  * depicts the type of returns for functions depending on different cases

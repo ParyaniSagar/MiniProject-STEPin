@@ -3,7 +3,7 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 COVERAGE_DIR = Coverage
 
-SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c
+SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c src/delay.c
 
 TEST_SRC = ../4_Test_Plan/test.c unity/unity.c 
 
