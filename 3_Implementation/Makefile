@@ -37,7 +37,6 @@ test: $(SRC) $(TEST_SRC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
 coverage:$(SRC)
-	mkdir $(COVERAGE_DIR)
 	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
 	./$(COVERAGE_TEST_NAME).$(EXEC)
 	gcov -a main.c
