@@ -1,7 +1,6 @@
 PROJ_NAME = KKGMS
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-COVERAGE_DIR = Coverage
 
 COVERAGE_TEST_NAME = coverage_$(PROJ_NAME)
 
@@ -39,12 +38,13 @@ test: $(SRC) $(TEST_SRC)
 
 coverage:$(SRC)
 	mkdir $(COVERAGE_DIR)
-	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_DIR)/$(COVERAGE_TEST_NAME).$(EXEC)
-	$(COVERAGE_DIR)/$(COVERAGE_TEST_NAME).$(EXEC)
+	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
+	./$(COVERAGE_TEST_NAME).$(EXEC)
 	gcov -a main.c
 	cat main.c.gcov
 
 clean:
+
 	$(RM) *.exe
 	$(RM) *.gcn
 	$(RM) *.gcov
