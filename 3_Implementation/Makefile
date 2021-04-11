@@ -3,6 +3,8 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 COVERAGE_DIR = Coverage
 
+COVERAGE_TEST_NAME = coverage_$(PROJ_NAME)
+
 SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c src/delay.c
 
 TEST_SRC = ../4_Test_Plan/test.c unity/unity.c 
@@ -36,9 +38,11 @@ test: $(SRC) $(TEST_SRC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
 coverage:$(SRC)
-	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(PROJ_NAME)
-	$(PROJ_NAME).$(EXEC)
-	gcov -a main.c $(SRC)
+	mkdir $(COVERAGE_DIR)
+	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_DIR)/$(COVERAGE_TEST_NAME).$(EXEC)
+	$(COVERAGE_DIR)/$(COVERAGE_TEST_NAME).$(EXEC)
+	gcov -a main.c
+	cat main.c.gcov
 
 clean:
 	$(RM) *.exe
