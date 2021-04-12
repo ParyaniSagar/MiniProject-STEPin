@@ -6,7 +6,7 @@ COVERAGE_TEST_NAME = coverage_$(PROJ_NAME)
 
 SRC = src/introduction.c src/create_array_of_questions.c src/file_read.c   src/play_the_game.c src/help.c src/delay.c
 
-TEST_SRC = ../4_Test_Plan/test.c unity/unity.c 
+TEST_SRC = ./test/test.c unity/unity.c 
 
 INC = -Iinc -Iunity
 
@@ -33,7 +33,7 @@ run : all
 	./$(PROJ_NAME).$(EXEC)
 
 test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	gcc $(TEST_SRC) $(SRC) $(INC) -o $(TEST_PROJ_NAME).$(EXEC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
 coverage:$(SRC)
