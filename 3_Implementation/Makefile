@@ -36,15 +36,17 @@ test: $(SRC) $(TEST_SRC)
 	gcc $(TEST_SRC) $(SRC) $(INC) -o $(TEST_PROJ_NAME).$(EXEC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
-coverage:$(SRC)
+coverage:$(SRC) 
+	
 	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
 	./$(COVERAGE_TEST_NAME).$(EXEC)
 	gcov -a main.c
-	cat main.c.gcov
+	notepad main.c.gcov
+	
 
 clean:
-
-	$(RM) *.exe
-	$(RM) *.gcn
+	$(RM) *.$(EXEC)
+	$(RM) *.gcno
 	$(RM) *.gcov
 	$(RM) *.gcda
+	$(RM) *.txt
