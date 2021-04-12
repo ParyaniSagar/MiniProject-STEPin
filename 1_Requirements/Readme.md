@@ -44,7 +44,7 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 * Converting program into GUI based game.
 * Option of monitoring and keeping the highest score.
 ### Threats
-* None as of now!
+* No Graphic user interface buttons
 
 # 4W&#39;s and 1&#39;H
 
@@ -63,7 +63,7 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 ## When:
 **When will it get completed ?**
 
-    The Project will be completed by ______.
+    The Project will be completed by 11th APril 2021.
 
 ## Where:
 **Where is the project done ?**
@@ -84,8 +84,9 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 |-------|---------------|--------------|--------------------|
 | HLR1  | Questionnaire | in .csv file | Implemented        |
 | HLR2  | Life Tracker  | function     | Implemented        |
-| HLR3  | Dynamic Memory management| inbuilt| Implemented        |              
-|    |                  |              |                    |
+| HLR3  | Dynamic Memory management| inbuilt| Implemented   |              
+| HLR4  | Display Support| inbuilt | Implemented            |
+
 
 
 ##  Low level Requirements:
@@ -96,3 +97,5 @@ A Contestant has to appear for only *2 out of 3* rounds, and has to clear **3 ou
 | LLR2 | csv File format and handling | HLR1          | Implemented        |
 | LLR3 | Function for counting lives  | HLR2          | Implemented        |
 | LLR4 | Array of structures          | HLR3          | Implemented        |
+| LLR5 | Managing passing of array for questions | HLR3 | Implemented      |
+| LLR6 | Function for Help box and support | HLR4 | Implemented            | 
