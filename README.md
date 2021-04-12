@@ -8,17 +8,19 @@ A fun C Programming based Quiz consisiting of questions from different genres, a
 ![MiniProject Intro Photo](./1_Requirements/kkgms.png)
  
 ## Want to Test Your Skills?
-* Follow the steps below to download the program, and play the game __Kaun Karega GENESIS me STEPin!__
-        * Fork the project
-        * Open the *3_Implementation folder* inside the *MiniProject-STEPin*
-        * For Windows Users, type **cmd** in the address bar where the folder is opened, this will open the command prompt with the current folder as its working directory
-        * For Linux Users, Download Windoes xD
-        * After the above step, type **make**
-        * Then type **make run**.
-        * After enterring the above said commands, the game will start, read the instructions and traverse through the game.
-        * Please leave your keen feedbacks in the comments!
+Follow the steps below to download the program, and play the game __Kaun Karega GENESIS me STEPin!__
+- Fork the project
+- Open the *3_Implementation folder* inside the *MiniProject-STEPin*
+> For Windows Users, type **cmd** in the address bar where the folder is opened.
 
-        
+> For Linux Users, Right Click on the *3_Implementation folder* and click on **Open in Terminal**
+- This will open the command prompt with the current folder as its working directory
+- After the above step, type **make**
+- Then type **make run**.
+- After enterring the above said commands, the game will start, read the instructions and traverse through the game.
+- Please leave your keen feedbacks in the comments!
+
+
 | Code Quality                                                                                                                                                                                                                                                                                   | Build                                                                                                                                                                                                  | Unity                                                                                                                                                                                               | Git Inspector |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b619bacd8a048d9831adb38afdbb478)](https://www.codacy.com/gh/ParyaniSagar/MiniProject-STEPin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ParyaniSagar/MiniProject-STEPin&amp;utm_campaign=Badge_Grade) | [![C/C++ CI - Build Status](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml) | [![Unit Testing - Unity](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/unity.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/unity.yml) |[![Contribution Check - Git Inspector](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/gitinspector.yml)               |
