@@ -5,7 +5,7 @@
 
 void introduction()
 {
-    system("cls");
+    system("cls || clear");
     printf("\n\n");
     printf("LTTS Presents\n");
     printf("+--+--+--+--+--+--+--+--+--+--+--+\n");

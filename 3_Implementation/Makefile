@@ -15,11 +15,13 @@ ifdef OS
    RM = del /q
    FixPath = $(subst /,\,$1)
    EXEC = exe
+   editor = notepad
 else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
       FixPath = $1
 	  EXEC = out
+	  editor = cat
    endif
 endif
 
@@ -39,9 +41,9 @@ test: $(SRC) $(TEST_SRC)
 coverage:$(SRC) 
 	
 	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
-	./$(COVERAGE_TEST_NAME).$(EXEC)
-	gcov -a main.c
-	notepad main.c.gcov
+	$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
+	gcov -a main.c 
+	$(editor) main.c.gcov
 	
 
 clean:
@@ -49,4 +51,3 @@ clean:
 	$(RM) *.gcno
 	$(RM) *.gcov
 	$(RM) *.gcda
-	$(RM) *.txt
