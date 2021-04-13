@@ -17,7 +17,7 @@ Follow the steps below to download the program, and play the game __Kaun Karega 
 - This will open the command prompt with the current folder as its working directory
 - After the above step, type **make**
 - Then type **make run**.
-- After enterring the above said commands, the game will start, read the instructions and traverse through the game.
+- After entering the above said commands, the game will start, read the instructions and traverse through the game.
 - Please leave your keen feedbacks in the comments!
 
 
