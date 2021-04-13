@@ -41,7 +41,7 @@ test: $(SRC) $(TEST_SRC)
 coverage:$(SRC) 
 	
 	gcc -fprofile-arcs -ftest-coverage main.c -I -c $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
-	$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
+	./$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
 	gcov -a main.c 
 	$(editor) main.c.gcov
 	
