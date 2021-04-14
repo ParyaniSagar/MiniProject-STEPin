@@ -48,7 +48,7 @@ coverage:$(SRC)
 
 #Valgrind- only for Linux
 valgrind : 
-	./$(TEST_NAME).$(EXEC) < input_redirect.txt
+	./$(PROJ_NAME).$(EXEC) < input_redirect.txt
 
 clean:
 	$(RM) *.$(EXEC)
