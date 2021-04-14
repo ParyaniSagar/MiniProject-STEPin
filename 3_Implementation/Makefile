@@ -46,8 +46,13 @@ coverage:$(SRC)
 	$(editor) main.c.gcov
 	
 
+#Valgrind- only for Linux
+valgrind : 
+	./$(TEST_NAME).$(EXEC) < input_redirect.txt
+
 clean:
 	$(RM) *.$(EXEC)
 	$(RM) *.gcno
 	$(RM) *.gcov
 	$(RM) *.gcda
+	

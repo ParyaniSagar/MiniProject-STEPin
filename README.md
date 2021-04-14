@@ -26,11 +26,15 @@ Follow the steps below to download the program, and play the game __Kaun Karega 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b619bacd8a048d9831adb38afdbb478)](https://www.codacy.com/gh/ParyaniSagar/MiniProject-STEPin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ParyaniSagar/MiniProject-STEPin&amp;utm_campaign=Badge_Grade) | [![C/C++ CI - Build Status](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/c-cpp.yml) | [![Unit Testing - Unity](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/unity.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/unity.yml) | [![Contribution Check - Git Inspector](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/gitinspector.yml) | [![CI-Coverage](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/CI-coverage.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/CI-coverage.yml) |
 
+| Static analysis - Cppcheck                                                                                                                                                                                                 |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [![Code Quality - Static Code - Cppcheck](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/ParyaniSagar/MiniProject-STEPin/actions/workflows/cppcheck.yml) |
+
 
 
 ## Folder Structure
 Folder             | Description
--------------------| -----------------------------------------
+-------------------|----------------------------------------------
 `1_Requirements`   | Documents detailing requirements and research
 `2_Design`         | Documents specifying design details
 `3_Implementation` | All code and documentation
