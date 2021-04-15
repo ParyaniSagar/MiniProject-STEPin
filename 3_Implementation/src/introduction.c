@@ -3,6 +3,11 @@
 
 #include"../inc/program.h"
 
+/**
+ * @brief introduction program to display the startin context.
+ * 
+ * @return ovoid
+ */
 void introduction()
 {
     system("cls || clear");

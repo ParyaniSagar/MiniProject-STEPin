@@ -6,22 +6,24 @@
 
 error_t file_read(qna_t *question_array,char *filename)
 {
-    if(question_array == NULL)
+    if(question_array == NULL)  //return null ptr ENUM if the array was not initialized.
     {
         return NULL_PTR;
     } 
     FILE* fp = fopen(filename, "r");
-    if (!fp)
+    if (!fp)    // return no file ENUM if the file was unable to read.
     {
         return NO_FILE;
     } 
      
     else 
     {
-        //printf("entered in file\n");
-        char buffer[200];
+        
+        char buffer[200];   //buffer for fetching the file line by line
         int index=0;
-        char *token;
+        char *token;        //token used to seperate the values in between delimeters
+
+        //this specific loop stores the questions into an array of structures passed by the function.
         while(index <= 4)
         {
             fgets(buffer,200, fp);
@@ -48,6 +50,5 @@ error_t file_read(qna_t *question_array,char *filename)
         }    
     }
     fclose(fp);
-    //printf("Closed file\n");
     return SUCCESS;
 }

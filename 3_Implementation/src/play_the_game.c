@@ -4,16 +4,25 @@
 #include<string.h>
 
 #include"../inc/program.h"
+
+/**
+ * @brief start playing the game program that keeps track of life and corrct answers
+ * 
+ * @param question_array 
+ * @param name_of_participant 
+ * @param no_of_questions 
+ * @return error_t 
+ */
 error_t play_the_game(qna_t *question_array, char *name_of_participant, const int no_of_questions)
 {
     char choice;
-    int life = 2; 
+    int life = 2;   //beginning life per round
     char ans[2];
     if(question_array == NULL)
     {
         return NULL_PTR;
     } 
-    for (int index = 0;index < no_of_questions; index++)
+    for (int index = 0;index < no_of_questions; index++)    //starting a single round
     { 
         strcpy(ans,(question_array+index)->answer);
         system("cls || clear");
@@ -35,13 +44,13 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
         getchar();
         choice = toupper(choice);
 
-        if(choice == ans[0])
+        if(choice == ans[0])    //if the given and correct answer match.
         {
             printf("\n Congratulations!, The correct answer is option %s\n",(question_array+index)->answer);
             printf("Press Enter to continue ");
             getchar();    
         }
-        else
+        else    // if they dont match, decrease the life!
         {
             printf("\nOh Sorry!, The correct answer is option %s\n",(question_array+index)->answer);
             life--;  
@@ -50,7 +59,7 @@ error_t play_the_game(qna_t *question_array, char *name_of_participant, const in
             
         }
 
-        if(life == 0)
+        if(life == 0)   //check for life, to still be in the porgram.
         {
             system("cls || clear");
             printf("\nSorry no more lives left, please try again next time\n");

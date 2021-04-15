@@ -1,6 +1,10 @@
 #include<stdio.h>
 
 #include"../inc/program.h"
+/**
+ * @brief Help porgram to display help regarding the porgram.
+ * 
+ */
 
 void help()
 {

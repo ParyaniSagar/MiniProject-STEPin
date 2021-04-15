@@ -25,7 +25,7 @@ mainhome:    introduction();
 	scanf("%c",&choice);
     getchar();
     choice = toupper(choice);
-    switch(choice)
+    switch(choice)      //introuction to porgram choice given to user, includes default case if user types another value than given.
     {
         case 'S':
             system("cls || clear");
@@ -68,7 +68,7 @@ mainhome:    introduction();
     scanf("%c",&genre_2);
     getchar();
 	genre_2 = toupper(genre_2);
-
+    //this code selects the two genres for the two rounds.
     if (genre_1 == genre_2)
     {
         printf("HAHA, we know you're too smart\n");

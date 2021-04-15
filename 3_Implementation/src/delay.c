@@ -2,6 +2,11 @@
 
 #include"../inc/program.h"
 
+/**
+ * @brief simple delay program.
+ * 
+ * @param number_of_seconds 
+ */
 void delay(int number_of_seconds)
 {
   
